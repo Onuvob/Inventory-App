@@ -22,43 +22,43 @@ export default class Login extends Component
                 <KeyboardAvoidingView behavior='padding' style={styles.container}>
 
 
+                    <View style={styles.logoContainer}>
+
                         <View style={styles.logoContainer}>
+                            <Image style={styles.logo} source={require('../images/inventorylogo.png')} >
+                            </Image>
+                            
+                        </View>
 
-                            <View style={styles.logoContainer}>
-                                <Image style={styles.logo} source={require('../images/inventorylogo.png')} >
-                                </Image>
-                                
-                            </View>
+                        <View style={styles.infoContainer}>
 
-                            <View style={styles.infoContainer}>
+                            <TextInput style={styles.input}
+                                placeholder = "Enter your email"
+                                placeholderTextColor = 'snow'
+                                keyboardType = 'email-address'
+                                returnKeyType = 'next'
+                                autoCorrect = {false}
+                                onSubmitEditing={()=> this.refs.textPassword.focus()}
+                            />
 
-                                <TextInput style={styles.input}
-                                    placeholder = "Enter your email"
-                                    placeholderTextColor = 'snow'
-                                    keyboardType = 'email-address'
-                                    returnKeyType = 'next'
-                                    autoCorrect = {false}
-                                    onSubmitEditing={()=> this.refs.textPassword.focus()}
-                                />
+                            <TextInput style={styles.input}
+                                placeholder = "Enter your password"
+                                placeholderTextColor = 'snow'
+                                secureTextEntry={true}
+                                returnKeyType = 'go'
+                                autoCorrect = {false}
+                                ref={"textPassword"}
+                            />
 
-                                <TextInput style={styles.input}
-                                    placeholder = "Enter your password"
-                                    placeholderTextColor = 'snow'
-                                    secureTextEntry={true}
-                                    returnKeyType = 'go'
-                                    autoCorrect = {false}
-                                    ref={"textPassword"}
-                                />
+                            <TouchableOpacity style={styles.button}>
 
-                                <TouchableOpacity style={styles.button}>
+                                <Text style={styles.buttonText}>Sign In</Text>
 
-                                    <Text style={styles.buttonText}>Sign In</Text>
-
-                                </TouchableOpacity>
-
-                            </View>
+                            </TouchableOpacity>
 
                         </View>
+
+                    </View>
 
                     
 
