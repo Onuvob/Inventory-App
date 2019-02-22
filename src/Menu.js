@@ -57,9 +57,6 @@ const MyDrawerNavigator = createDrawerNavigator({
         Home: {
             screen: Home,
         },
-        Profile: {
-            screen: Profile,
-        },
         AddStore: {
             screen: AddStore,
         },
@@ -74,6 +71,9 @@ const MyDrawerNavigator = createDrawerNavigator({
         },
         ProductList: {
             screen: ProductList,
+        },
+        Profile: {
+            screen: Profile,
         },
     
     },
