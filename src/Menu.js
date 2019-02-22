@@ -7,6 +7,12 @@ import { createAppContainer, createDrawerNavigator } from 'react-navigation';
 
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import AddStore from './pages/AddStore';
+import AddProduct from './pages/AddProduct';
+import ProductList from './pages/ProductList';
+import StoreList from './pages/StoreList';
+import AddCategories from './pages/AddCategories';
+
 
 
 export default class Menu extends Component
@@ -29,6 +35,22 @@ const MyDrawerNavigator = createDrawerNavigator({
     Profile: {
       screen: Profile,
     },
+    AddStore: {
+      screen: AddStore,
+    },
+    AddProduct: {
+      screen: AddProduct,
+    },
+    AddCategories: {
+      screen: AddCategories,
+    },
+    StoreList: {
+      screen: StoreList,
+    },
+    ProductList: {
+      screen: ProductList,
+    },
+    
   });
 
 

@@ -7,9 +7,18 @@ import { StatusBar, StyleSheet, Text, View } from 'react-native';
 
 import { Icon, Header, Content, Container, Button, Left } from 'native-base';
 
+import FontAwesome, { Icons } from 'react-native-fontawesome';
+
 
 export default class Profile extends Component
 {
+    static navigationOptions = {
+        drawerLabel: 'Profile',
+        drawerIcon: ({ tintColor }) => (
+            <FontAwesome style={{color: 'red'}}>{Icons.user}</FontAwesome>
+        ),
+    };
+    
 
     render()
     {
@@ -17,7 +26,17 @@ export default class Profile extends Component
 
             <Container style={styles.container}>
 
-                <StatusBar barStyle="light-content"/>
+                <Header transparent style={{ backgroundColor: "transparent" }}>
+
+                    <StatusBar barStyle="light-content"/>
+
+                    <Left>
+                        <Icon>
+                            <FontAwesome style={{color: 'red'}} onPress={()=> this.props.navigation.openDrawer()} >{Icons.bars}</FontAwesome>
+                        </Icon>
+                    </Left>
+
+                </Header>
                 
                 <Content contentContainerStyle={{
 
