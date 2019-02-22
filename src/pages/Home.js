@@ -29,8 +29,8 @@ export default class Home extends Component
                     <StatusBar barStyle="light-content"/>
 
                     <Left>
-                        <Icon>
-                            <FontAwesome style={{color: 'red'}} onPress={()=> this.props.navigation.openDrawer()} >{Icons.bars}</FontAwesome>
+                        <Icon style={{ marginLeft: 20 }}>
+                            <FontAwesome style={{color: 'white'}} onPress={()=> this.props.navigation.openDrawer()} >{Icons.bars}</FontAwesome>
                         </Icon>
                     </Left>
 
