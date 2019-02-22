@@ -16,6 +16,8 @@ import { StyleProvider, Container, Content, Header, Body, Icon } from 'native-ba
 
 import FontAwesome, { Icons } from 'react-native-fontawesome';
 
+
+
 export default class Menu extends Component
 {
     render()
