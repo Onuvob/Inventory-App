@@ -7,11 +7,15 @@ import { StyleSheet, Text, View, Image,
     SafeAreaView, Keyboard, TouchableOpacity, 
     KeyboardAvoidingView } from 'react-native';
 
-
+  
 export default class Login extends Component
 {
+    
+    
+
     render()
     {
+
         return(
 
             <SafeAreaView style={styles.container}>

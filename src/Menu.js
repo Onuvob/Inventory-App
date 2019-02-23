@@ -5,6 +5,7 @@ import React, {Component} from 'react';
 import { StyleSheet, Text, View, Image, StatusBar } from 'react-native';
 import { createAppContainer, createDrawerNavigator, DrawerItems } from 'react-navigation';
 
+import Login from './Login';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import AddStore from './pages/AddStore';
@@ -20,6 +21,7 @@ import FontAwesome, { Icons } from 'react-native-fontawesome';
 
 export default class Menu extends Component
 {
+
     render()
     {
         return(
@@ -54,6 +56,7 @@ const CustomDrawerContentComponent = (props) => (
 
 
 const MyDrawerNavigator = createDrawerNavigator({
+
         Home: {
             screen: Home,
         },
