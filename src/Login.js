@@ -22,7 +22,7 @@ export default class Login extends Component
                 <KeyboardAvoidingView behavior='padding' style={styles.container}>
 
 
-                    <View style={styles.logoContainer}>
+                    <View style={styles.mainContainer}>
 
                         <View style={styles.logoContainer}>
                             <Image style={styles.logo} source={require('../images/inventorylogo.png')} >
@@ -56,6 +56,12 @@ export default class Login extends Component
 
                             </TouchableOpacity>
 
+                            <TouchableOpacity style={styles.signButton}>
+
+                                <Text style={styles.buttonText}>Sign Up</Text>
+
+                            </TouchableOpacity>
+
                         </View>
 
                     </View>
@@ -82,7 +88,15 @@ const styles = StyleSheet.create({
         {
             flex: 1,
             backgroundColor: 'rgb(32, 53, 70)',
-            flexDirection: 'column',
+            
+            
+            
+        },
+
+        mainContainer: 
+        {
+            flex: 1,
+            
         },
 
         logoContainer: 
@@ -91,6 +105,8 @@ const styles = StyleSheet.create({
             alignItems: 'center',
             justifyContent: 'center',
         },
+
+        
 
         logo: 
         {
@@ -102,31 +118,42 @@ const styles = StyleSheet.create({
         
         infoContainer:
         {
-            // backgroundColor: 'red',
-            position: 'absolute',
+            flex: 1,
+            //backgroundColor: 'red',
             left: 0,
-            right: 0,
-            bottom: 0,
+            right: 0, 
             padding: 20,
-            height: 200,
         },
 
         input:
         {
-
+            
             backgroundColor: 'chocolate',
+            borderRadius: 5,
             color: 'white',
             height: 40,
             fontSize: 16,
-            paddingHorizontal: 10,
+            paddingVertical: 25,
+            paddingHorizontal: 15,
             marginBottom: 15
         },
 
 
         button:
         {
+            borderRadius: 20,
+            backgroundColor: 'cadetblue',
+            paddingVertical: 15,
+            marginBottom: 15
+        },
+
+        signButton:
+        {
+            borderRadius: 20,
+            marginBottom: 15,
+            marginTop: 40,
             backgroundColor: 'red',
-            paddingVertical: 10
+            paddingVertical: 15
         },
 
         buttonText:
